@@ -5,13 +5,7 @@ import GenericHeader from "@/components/GenericHeader";
 import Transition from "@/components/Transition";
 import LinkButton from "@/components/LinkButton";
 import Faq from "@/components/Faq";
-import { Metadata } from "next";
 import Image from "next/image"
-
-export const metadata:Metadata = {
-  title: "Exeter Crypto Society",
-  description: "Placeholder description"
-}
 
 export default function Home() {
   
