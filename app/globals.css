@@ -45,19 +45,24 @@ body {
   animation: price-carousel 40s linear infinite; 
 }
 
+/* Borders */
+
 .border__top {
   border-top: 1px solid;
 }
+.border__top_bottom {
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+}
+
+/* Borders end */
 
 /* End price carousel */
 
 /* CTA pseudo element */
-.cta__section {
-  position: relative;
-  transition: all 0.2s ease-in-out;
-}
-.cta__section svg:hover {
-  transform: rotate(-45deg);
+
+#target__opacity:hover {
+  opacity: 0.8;
 }
 
 /*

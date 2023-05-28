@@ -16,11 +16,12 @@ const Footer = () => {
     <footer className="n__width mt-10 dark:text-neutral-200 ">
       <Link href="https://my.exeterguild.com/groups/H6VXP/blockchain-and-crypto-society/memberships" className="cta__section">
         <section
-          className="border__top pt-10 pb-10 flex items-center justify-between"
+          className="border__top pt-10 pb-10 flex items-center justify-between transition-opacity"
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
+          id="target__opacity"
         >
-          <p className="text-4xl lg:text-6xl font-[500]">Join us</p>
+          <p className="text-4xl lg:text-6xl font-[500]">Get Membership</p>
           <anim.svg
             className="lg:w-[83px] lg:h-[59px] w-[54.78px] h-[38.94px]"
             viewBox="0 0 83 59"
