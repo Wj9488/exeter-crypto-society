@@ -19,6 +19,7 @@ export default function Home() {
         We're creating a hub where traders, entrepreneurs and developers of all types can join together. We have a diverse group of motivated individuals who are constantly seeking improvement. If you're passionate about trading you'll fit right in - no matter how obscure the asset.
         "
           buttonText="Find your people"
+          buttonHref="https://my.exeterguild.com/groups/H6VXP/blockchain-and-crypto-society/memberships"
           imageSource="/cryptoSoc__img_city.webp"
           imageAlt="City Sky"
         />

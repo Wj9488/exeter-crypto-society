@@ -9,6 +9,7 @@ interface HeaderProps {
   imageSource: string;
   imageAlt: string;
   buttonText: string;
+  buttonHref: string;
 }
 
 const GenericHeader = ({
@@ -17,7 +18,8 @@ const GenericHeader = ({
   subheading,
   imageSource,
   imageAlt,
-  buttonText
+  buttonText,
+  buttonHref
 }: HeaderProps) => {
   return (
     <header className="pt-16 pb-16 lg:pt-20 lg:pb-20 n__width dark:text-neutral-200">
@@ -27,7 +29,7 @@ const GenericHeader = ({
       <div className="lg:ml-[0%]">
         <p className="mt-20 uppercase text-xs">{subheadingPreText}</p>
         <p className="text-lg lg:text-xl mt-4">{subheading}</p>
-        <LinkButton text={buttonText} href="https://my.exeterguild.com/groups/H6VXP/blockchain-and-crypto-society/memberships" />
+        <LinkButton text={buttonText} href={buttonHref} />
       </div>
       <div className="pt-20 w-[100%] h-[100%]">
         <Image

@@ -22,6 +22,7 @@ const About = () => {
         you'll fit right in.
         "
         buttonText="Get your membership"
+        buttonHref="https://my.exeterguild.com/groups/H6VXP/blockchain-and-crypto-society/memberships"
         imageSource="/cryptoSoc__img_about.webp"
         imageAlt="Busy people"
         />

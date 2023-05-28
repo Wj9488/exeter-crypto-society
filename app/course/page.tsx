@@ -14,6 +14,7 @@ const Course = () => {
             We’re running an 8 week program to take you from beginner to being able to navigate and trade the crypto / NFT markets with confidence. This course is taught by the Exeter Crypto Society committee who has a combined 14 years of trading experience to pass on for free. 
             "
             buttonText="Enroll for free"
+            buttonHref="/"
             imageSource="/cryptoSoc__img_bitcoin.webp"
             imageAlt="Busy people"
             />

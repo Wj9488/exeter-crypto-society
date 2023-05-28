@@ -122,29 +122,29 @@ const Footer = () => {
             </li>
           </ul>
           <ul className="text-sm">
-            <li className="hover:opacity-[75%]">
+            <li className="hover:opacity-[75%] flex gap-2">
               <Link legacyBehavior href="/#events">
-                <a target="_blank">Discord &#8599;</a>
+                <a target="_blank">Discord</a>
               </Link>
             </li>
-            <li className="hover:opacity-[75%]">
+            <li className="hover:opacity-[75%] flex gap-2">
               <Link legacyBehavior href="/about">
-                <a target="_blank">Instagram &#8599;</a>
+                <a target="_blank">Instagram</a>
               </Link>
             </li>
-            <li className="hover:opacity-[75%]">
+            <li className="hover:opacity-[75%] flex gap-2">
               <Link legacyBehavior href="/committee">
-                <a target="_blank">Fixr &#8599;</a>
+                <a target="_blank">Fixr</a>
               </Link>
             </li>
-            <li className="hover:opacity-[75%]">
+            <li className="hover:opacity-[75%] flex gap-2">
               <Link legacyBehavior href="/">
-                <a target="_blank">Guild Page &#8599;</a>
+                <a target="_blank">Guild Page</a>
               </Link>
             </li>
-            <li className="hover:opacity-[75%]">
+            <li className="hover:opacity-[75%] flex gap-2">
               <Link legacyBehavior href="/">
-                <a target="_blank">LinkedIn &#8599;</a>
+                <a target="_blank">LinkedIn</a>
               </Link>
             </li>
           </ul>

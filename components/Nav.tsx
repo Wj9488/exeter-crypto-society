@@ -97,16 +97,16 @@ const Nav = () => {
             </Link>
           </li>
           <button className="px-3 py-1 bg-neutral-900 rounded-lg text-white dark:text-black dark:bg-neutral-200">
-            <Link href="/">Join us</Link>
+            <Link href="https://my.exeterguild.com/groups/H6VXP/blockchain-and-crypto-society/memberships" legacyBehavior><a target="_blank">Join us</a></Link>
           </button>
           <p className="dark:text-neutral-200 hover:cursor-pointer min-w-[1.5rem]" onClick={handleDarkClick}>
             <span className="sr-only sr-only-focusable">
               Click to change colour theme
             </span>
             {darkMode ? (
-              <span className="text-xl">&#9788;</span>
+              <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" className="fill-neutral-200" viewBox="0 0 16 16"> <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" className="fill-neutral-200"></path> </svg>
             ) : (
-              <span className="text-xl">&#9790;</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" className="fill-black" viewBox="0 0 16 16"> <path d="M7 8a3.5 3.5 0 0 1 3.5 3.555.5.5 0 0 0 .625.492A1.503 1.503 0 0 1 13 13.5a1.5 1.5 0 0 1-1.5 1.5H3a2 2 0 1 1 .1-3.998.5.5 0 0 0 .509-.375A3.502 3.502 0 0 1 7 8zm4.473 3a4.5 4.5 0 0 0-8.72-.99A3 3 0 0 0 3 16h8.5a2.5 2.5 0 0 0 0-5h-.027z"/> <path d="M11.286 1.778a.5.5 0 0 0-.565-.755 4.595 4.595 0 0 0-3.18 5.003 5.46 5.46 0 0 1 1.055.209A3.603 3.603 0 0 1 9.83 2.617a4.593 4.593 0 0 0 4.31 5.744 3.576 3.576 0 0 1-2.241.634c.162.317.295.652.394 1a4.59 4.59 0 0 0 3.624-2.04.5.5 0 0 0-.565-.755 3.593 3.593 0 0 1-4.065-5.422z"/> </svg>
             )}
           </p>
           <div
@@ -118,9 +118,16 @@ const Nav = () => {
               Click to toggle navigation menu
             </span>
             {menuOpen ? (
-              <span className="text-4xl dark:text-neutral-200">&#215;</span>
+              <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="1" y="14.8491" width="21" height="2" rx="0.75" transform="rotate(-45 1 14.8491)" className="fill-black dark:fill-neutral-200"/>
+              <rect x="2.0459" y="0.131348" width="21" height="2" rx="0.75" transform="rotate(45 2.0459 0.131348)" className="fill-black dark:fill-neutral-200"/>
+              </svg>              
             ) : (
-              <span className="text-2xl dark:text-neutral-200">&#9776;</span>
+              <svg width="21" height="12" viewBox="0 0 21 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="21" height="2" rx="0.75" className="fill-black dark:fill-neutral-200"/>
+              <rect y="5" width="21" height="2" rx="0.75" className="fill-black dark:fill-neutral-200"/>
+              <rect y="10" width="21" height="2" rx="0.75" className="fill-black dark:fill-neutral-200"/>
+              </svg>
             )}
           </div>
         </ul>
