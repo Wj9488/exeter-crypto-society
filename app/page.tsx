@@ -1,113 +1,265 @@
-import Image from 'next/image'
+"use client";
+import Link from "next/link";
+import Marquee from "@/components/Marquee";
+import GenericHeader from "@/components/GenericHeader";
+import Transition from "@/components/Transition";
+import LinkButton from "@/components/LinkButton";
+import Faq from "@/components/Faq";
+import { Metadata } from "next";
+import Image from "next/image"
+
+export const metadata:Metadata = {
+  title: "Exeter Crypto Society",
+  description: "Placeholder description"
+}
 
 export default function Home() {
+  
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+    <Transition>
+      <main>
+        <GenericHeader
+          headingOne="Make friends, trade, network and meet like-minded people."
+          subheadingPreText="Welcome"
+          subheading="
+        We're creating a hub where traders, entrepreneurs and developers of all types can join together. We have a diverse group of motivated individuals who are constantly seeking improvement. If you're passionate about trading you'll fit right in - no matter how obscure the asset.
+        "
+          buttonText="Find your people"
+          imageSource="/cryptoSoc__img_city.webp"
+          imageAlt="City Sky"
         />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
+        <section className="pt-10 pb-10 pl-[2.5%] pr-[2.5%]  lg:grid lg:grid-cols-2 lg:grid-rows-1 dark:text-neutral-200">
+          <h2 className="font-medium text-3xl lg:text-4xl">A bit about us.</h2>
+          <p className="lg:text-xl lg:mt-0 mt-4">
+            We are committed to fostering an inclusive and supportive
+            environment that encourages growth, learning, and collaboration.
+            Whether you're a student, faculty member, or simply have a keen
+            interest in crypto, we welcome you to join our thriving society and
+            embark on an extraordinary journey of discovery and personal
+            development.
+            <br />
+            <br />
+            We run frequent{" "}
+            <Link href="#" className="underline">
+              trade nights and socials
+            </Link>{" "}
+            as well as a free 8 week course teaching you all the basics about
+            trading crypto using a variety of strategies.
           </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+        </section>
+        <section id="events" className="lg:pb-10">
+          <Marquee />
+        </section>
+        <section className="lg:pt-10 lg:pb-20 flex items-center justify-center overflow-hidden">
+          <svg
+            width="1366"
+            height="80"
+            viewBox="0 0 1366 80"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M188.5 40C188.5 45.3515 185.94 50.4931 181.22 55.2164C176.498 59.9417 169.641 64.2201 161.127 67.8238C144.101 75.0305 120.545 79.5 94.5 79.5C68.4549 79.5 44.8992 75.0305 27.8733 67.8238C19.3594 64.2201 12.5017 59.9417 7.77996 55.2164C3.06017 50.4931 0.5 45.3515 0.5 40C0.5 34.6485 3.06017 29.5069 7.77996 24.7836C12.5017 20.0583 19.3594 15.7799 27.8733 12.1762C44.8992 4.96947 68.4549 0.5 94.5 0.5C120.545 0.5 144.101 4.96947 161.127 12.1762C169.641 15.7799 176.498 20.0583 181.22 24.7836C185.94 29.5069 188.5 34.6485 188.5 40Z"
+              className="stroke-black dark:stroke-neutral-200"
+            />
+            <path
+              d="M356.5 40C356.5 45.3506 353.927 50.4918 349.182 55.2155C344.435 59.941 337.54 64.2195 328.981 67.8235C311.865 75.0304 288.183 79.5 262 79.5C235.817 79.5 212.135 75.0304 195.019 67.8235C186.46 64.2195 179.565 59.941 174.818 55.2155C170.073 50.4918 167.5 45.3506 167.5 40C167.5 34.6494 170.073 29.5082 174.818 24.7845C179.565 20.059 186.46 15.7805 195.019 12.1765C212.135 4.96956 235.817 0.5 262 0.5C288.183 0.5 311.865 4.96956 328.981 12.1765C337.54 15.7805 344.435 20.059 349.182 24.7845C353.927 29.5082 356.5 34.6494 356.5 40Z"
+              className="stroke-black dark:stroke-neutral-200"
+            />
+            <path
+              d="M862.5 40C862.5 45.3506 859.927 50.4918 855.182 55.2155C850.435 59.941 843.54 64.2195 834.981 67.8235C817.865 75.0304 794.183 79.5 768 79.5C741.817 79.5 718.135 75.0304 701.019 67.8235C692.46 64.2195 685.565 59.941 680.818 55.2155C676.073 50.4918 673.5 45.3506 673.5 40C673.5 34.6494 676.073 29.5082 680.818 24.7845C685.565 20.059 692.46 15.7805 701.019 12.1765C718.135 4.96956 741.817 0.5 768 0.5C794.183 0.5 817.865 4.96956 834.981 12.1765C843.54 15.7805 850.435 20.059 855.182 24.7845C859.927 29.5082 862.5 34.6494 862.5 40Z"
+              className="stroke-black dark:stroke-neutral-200"
+            />
+            <path
+              d="M1029.5 40C1029.5 45.3506 1026.93 50.4918 1022.18 55.2155C1017.43 59.941 1010.54 64.2195 1001.98 67.8235C984.865 75.0304 961.183 79.5 935 79.5C908.817 79.5 885.135 75.0304 868.019 67.8235C859.46 64.2195 852.565 59.941 847.818 55.2155C843.073 50.4918 840.5 45.3506 840.5 40C840.5 34.6494 843.073 29.5082 847.818 24.7845C852.565 20.059 859.46 15.7805 868.019 12.1765C885.135 4.96956 908.817 0.5 935 0.5C961.183 0.5 984.865 4.96956 1001.98 12.1765C1010.54 15.7805 1017.43 20.059 1022.18 24.7845C1026.93 29.5082 1029.5 34.6494 1029.5 40Z"
+              className="stroke-black dark:stroke-neutral-200"
+            />
+            <path
+              d="M1198.5 40C1198.5 45.3506 1195.93 50.4918 1191.18 55.2155C1186.43 59.941 1179.54 64.2195 1170.98 67.8235C1153.86 75.0304 1130.18 79.5 1104 79.5C1077.82 79.5 1054.14 75.0304 1037.02 67.8235C1028.46 64.2195 1021.57 59.941 1016.82 55.2155C1012.07 50.4918 1009.5 45.3506 1009.5 40C1009.5 34.6494 1012.07 29.5082 1016.82 24.7845C1021.57 20.059 1028.46 15.7805 1037.02 12.1765C1054.14 4.96956 1077.82 0.5 1104 0.5C1130.18 0.5 1153.86 4.96956 1170.98 12.1765C1179.54 15.7805 1186.43 20.059 1191.18 24.7845C1195.93 29.5082 1198.5 34.6494 1198.5 40Z"
+              className="stroke-black dark:stroke-neutral-200"
+            />
+            <path
+              d="M1365.5 40C1365.5 45.3515 1362.94 50.4931 1358.22 55.2164C1353.5 59.9417 1346.64 64.2201 1338.13 67.8238C1321.1 75.0305 1297.55 79.5 1271.5 79.5C1245.45 79.5 1221.9 75.0305 1204.87 67.8238C1196.36 64.2201 1189.5 59.9417 1184.78 55.2164C1180.06 50.4931 1177.5 45.3515 1177.5 40C1177.5 34.6485 1180.06 29.5069 1184.78 24.7836C1189.5 20.0583 1196.36 15.7799 1204.87 12.1762C1221.9 4.96947 1245.45 0.5 1271.5 0.5C1297.55 0.5 1321.1 4.96947 1338.13 12.1762C1346.64 15.7799 1353.5 20.0583 1358.22 24.7836C1362.94 29.5069 1365.5 34.6485 1365.5 40Z"
+              className="stroke-black dark:stroke-neutral-200"
+            />
+            <path
+              d="M525.5 40C525.5 45.3506 522.927 50.4918 518.182 55.2155C513.435 59.941 506.54 64.2195 497.981 67.8235C480.865 75.0304 457.183 79.5 431 79.5C404.817 79.5 381.135 75.0304 364.019 67.8235C355.46 64.2195 348.565 59.941 343.818 55.2155C339.073 50.4918 336.5 45.3506 336.5 40C336.5 34.6494 339.073 29.5082 343.818 24.7845C348.565 20.059 355.46 15.7805 364.019 12.1765C381.135 4.96956 404.817 0.5 431 0.5C457.183 0.5 480.865 4.96956 497.981 12.1765C506.54 15.7805 513.435 20.059 518.182 24.7845C522.927 29.5082 525.5 34.6494 525.5 40Z"
+              className="stroke-black dark:stroke-neutral-200"
+            />
+            <path
+              d="M692.5 40C692.5 45.3506 689.927 50.4918 685.182 55.2155C680.435 59.941 673.54 64.2195 664.981 67.8235C647.865 75.0304 624.183 79.5 598 79.5C571.817 79.5 548.135 75.0304 531.019 67.8235C522.46 64.2195 515.565 59.941 510.818 55.2155C506.073 50.4918 503.5 45.3506 503.5 40C503.5 34.6494 506.073 29.5082 510.818 24.7845C515.565 20.059 522.46 15.7805 531.019 12.1765C548.135 4.96956 571.817 0.5 598 0.5C624.183 0.5 647.865 4.96956 664.981 12.1765C673.54 15.7805 680.435 20.059 685.182 24.7845C689.927 29.5082 692.5 34.6494 692.5 40Z"
+              className="stroke-black dark:stroke-neutral-200"
+            />
+          </svg>
+        </section>
+        <section className="pt-10 pb-10 pl-[2.5%] pr-[2.5%] dark:text-neutral-200">
+          <h3 className="font-medium text-3xl lg:text-4xl">
+            What's included in the membership?
+          </h3>
+          <div className="w-[100%] h-[1px] bg-black dark:bg-neutral-200 mt-6"></div>
+          <div className="mt-6">
+            <p className="text-2xl">- Weekly socials</p>
+            <p className="mt-2">
+              We run socials every week at multiple clubs and bars all over Exeter.
+            </p>
+          </div>
+          <div className="w-[100%] h-[1px] bg-black dark:bg-neutral-200 mt-6"></div>
+          <div className="mt-6 lg:ml-[33%] lg:w-[30%]">
+            <p className="text-2xl">- Trade Nights</p>
+            <p className="mt-2">
+              Discuss trading and trade alongside your fellow society members. Whoever makes the most wins a prize.
+            </p>
+          </div>
+          <div className="w-[100%] h-[0.5px] bg-black dark:bg-neutral-200 mt-6"></div>
+          <div className="mt-6 lg:ml-[66%]">
+            <p className="text-2xl">- Trading Bootcamp</p>
+            <p className="mt-2">
+              Our highly experienced committee will teach you the basics of crypto trading for free.
+            </p>
+          </div>
+        </section>
+        <section className="lg:pt-20 lg:pb-20 flex items-center justify-center overflow-hidden">
+          <svg width="1381" height="82" viewBox="0 0 1381 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="1261.5" y="0.5" width="119" height="79" rx="9.5" className="stroke-black dark:stroke-neutral-200"/>
+            <rect x="1121.5" y="1.5" width="119" height="79" rx="9.5" className="stroke-black dark:stroke-neutral-200"/>
+            <rect x="981.5" y="0.5" width="119" height="79" rx="9.5" className="stroke-black dark:stroke-neutral-200"/>
+            <rect x="841.5" y="1.5" width="119" height="79" rx="9.5" className="stroke-black dark:stroke-neutral-200"/>
+            <rect x="701.5" y="1.5" width="119" height="79" rx="9.5" className="stroke-black dark:stroke-neutral-200"/>
+            <rect x="561.5" y="2.5" width="119" height="79" rx="9.5" className="stroke-black dark:stroke-neutral-200"/>
+            <rect x="421.5" y="1.5" width="119" height="79" rx="9.5" className="stroke-black dark:stroke-neutral-200"/>
+            <rect x="281.5" y="2.5" width="119" height="79" rx="9.5" className="stroke-black dark:stroke-neutral-200"/>
+            <rect x="140.5" y="1.5" width="119" height="79" rx="9.5" className="stroke-black dark:stroke-neutral-200"/>
+            <rect x="0.5" y="2.5" width="119" height="79" rx="9.5" className="stroke-black dark:stroke-neutral-200"/>
+            <rect x="541.5" y="37.5" width="19" height="9" rx="2" className="stroke-black dark:stroke-neutral-200"/>
+            <rect x="260.5" y="37.5" width="20" height="9" rx="2" className="stroke-black dark:stroke-neutral-200"/>
+            <rect x="401.5" y="37.5" width="19" height="9" rx="2" className="stroke-black dark:stroke-neutral-200"/>
+            <rect x="120.5" y="37.5" width="19" height="9" rx="2" className="stroke-black dark:stroke-neutral-200"/>
+            <rect x="681.5" y="37.5" width="19" height="9" rx="2" className="stroke-black dark:stroke-neutral-200"/>
+            <rect x="821.5" y="37.5" width="19" height="9" rx="2" className="stroke-black dark:stroke-neutral-200"/>
+            <rect x="961.5" y="37.5" width="19" height="9" rx="2" className="stroke-black dark:stroke-neutral-200"/>
+            <rect x="1101.5" y="37.5" width="19" height="9" rx="2" className="stroke-black dark:stroke-neutral-200"/>
+            <rect x="1241.5" y="37.5" width="19" height="9" rx="2" className="stroke-black dark:stroke-neutral-200"/>
+          </svg>
+        </section>
+        <section className="pt-10 pb-10 pl-[2.5%] pr-[2.5%]  dark:text-neutral-200">
+          <h4 className="font-medium text-3xl lg:text-4xl mb-4">
+            Upcoming events
+          </h4>
+          <div className="lg:grid lg:grid-cols-2 lg:grid-rows-2 gap-4 lg:gap-8 pt-5">
+            <div className="pt-6 lg:pt-0">
+              <div className="w-full">
+                <Image 
+                width={400}
+                height={800}
+                src="/cryptoSoc__img_bitcoin.webp"
+                alt="Crypto Society Course"
+                className="w-full rounded-xl"
+                />
+              </div>
+              <p className="text-2xl  font-[500] mt-4">
+                First weekly trading session
+                - 09/09/2023
+              </p>
+              <p className="mt-2 lg:text-xl">
+                Join us for our first ever trade night, we’ll be tackling
+                anything related to crypto and NFTs. You’ll be able to share
+                your ideas and network with other traders.
+              </p>
+              <LinkButton text="Get tickets here" href="#" />
+            </div>
+            <div className="pt-6 lg:pt-0">
+              <div className="w-full">
+                <Image 
+                width={400}
+                height={800}
+                src="/cryptoSoc__img_about.webp"
+                alt="Crypto Society Course"
+                className="w-full rounded-xl"
+                />
+              </div>
+              <p className="text-2xl font-[500] mt-4">
+                First weekly social at The Ram
+                - 14/09/2023
+              </p>
+              <p className="mt-2 lg:text-xl">
+                Come meet the committee and other likeminded individuals 
+                to talk about everything trading.
+              </p>
+              <LinkButton text="Get tickets here" href="#" />
+            </div>
+            <div className="pt-6 lg:pt-0">
+              <div className="w-full">
+                <Image 
+                width={400}
+                height={800}
+                src="/cryptoSoc__img_course.webp"
+                alt="Crypto Society Course"
+                className="w-full rounded-xl"
+                />
+              </div>
+              <p className="text-2xl font-[500] mt-4">
+                Trading Bootcamp Lesson 1
+                - 24/09/2023
+              </p>
+              <p className="mt-2 lg:text-xl">
+                The first lesson of the 8 week bootcamp. You'll learn
+                the basics of what trading is and some of the advantages
+                of knowing how to trade.
+              </p>
+              <LinkButton text="Enroll for free" href="#" />
+            </div>
+          </div>
+        </section>
+        <section className="lg:pt-10 lg:pb-20 flex items-center justify-center overflow-hidden">
+          <svg
+            width="1366"
+            height="80"
+            viewBox="0 0 1366 80"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M188.5 40C188.5 45.3515 185.94 50.4931 181.22 55.2164C176.498 59.9417 169.641 64.2201 161.127 67.8238C144.101 75.0305 120.545 79.5 94.5 79.5C68.4549 79.5 44.8992 75.0305 27.8733 67.8238C19.3594 64.2201 12.5017 59.9417 7.77996 55.2164C3.06017 50.4931 0.5 45.3515 0.5 40C0.5 34.6485 3.06017 29.5069 7.77996 24.7836C12.5017 20.0583 19.3594 15.7799 27.8733 12.1762C44.8992 4.96947 68.4549 0.5 94.5 0.5C120.545 0.5 144.101 4.96947 161.127 12.1762C169.641 15.7799 176.498 20.0583 181.22 24.7836C185.94 29.5069 188.5 34.6485 188.5 40Z"
+              className="stroke-black dark:stroke-neutral-200"
+            />
+            <path
+              d="M356.5 40C356.5 45.3506 353.927 50.4918 349.182 55.2155C344.435 59.941 337.54 64.2195 328.981 67.8235C311.865 75.0304 288.183 79.5 262 79.5C235.817 79.5 212.135 75.0304 195.019 67.8235C186.46 64.2195 179.565 59.941 174.818 55.2155C170.073 50.4918 167.5 45.3506 167.5 40C167.5 34.6494 170.073 29.5082 174.818 24.7845C179.565 20.059 186.46 15.7805 195.019 12.1765C212.135 4.96956 235.817 0.5 262 0.5C288.183 0.5 311.865 4.96956 328.981 12.1765C337.54 15.7805 344.435 20.059 349.182 24.7845C353.927 29.5082 356.5 34.6494 356.5 40Z"
+              className="stroke-black dark:stroke-neutral-200"
+            />
+            <path
+              d="M862.5 40C862.5 45.3506 859.927 50.4918 855.182 55.2155C850.435 59.941 843.54 64.2195 834.981 67.8235C817.865 75.0304 794.183 79.5 768 79.5C741.817 79.5 718.135 75.0304 701.019 67.8235C692.46 64.2195 685.565 59.941 680.818 55.2155C676.073 50.4918 673.5 45.3506 673.5 40C673.5 34.6494 676.073 29.5082 680.818 24.7845C685.565 20.059 692.46 15.7805 701.019 12.1765C718.135 4.96956 741.817 0.5 768 0.5C794.183 0.5 817.865 4.96956 834.981 12.1765C843.54 15.7805 850.435 20.059 855.182 24.7845C859.927 29.5082 862.5 34.6494 862.5 40Z"
+              className="stroke-black dark:stroke-neutral-200"
+            />
+            <path
+              d="M1029.5 40C1029.5 45.3506 1026.93 50.4918 1022.18 55.2155C1017.43 59.941 1010.54 64.2195 1001.98 67.8235C984.865 75.0304 961.183 79.5 935 79.5C908.817 79.5 885.135 75.0304 868.019 67.8235C859.46 64.2195 852.565 59.941 847.818 55.2155C843.073 50.4918 840.5 45.3506 840.5 40C840.5 34.6494 843.073 29.5082 847.818 24.7845C852.565 20.059 859.46 15.7805 868.019 12.1765C885.135 4.96956 908.817 0.5 935 0.5C961.183 0.5 984.865 4.96956 1001.98 12.1765C1010.54 15.7805 1017.43 20.059 1022.18 24.7845C1026.93 29.5082 1029.5 34.6494 1029.5 40Z"
+              className="stroke-black dark:stroke-neutral-200"
+            />
+            <path
+              d="M1198.5 40C1198.5 45.3506 1195.93 50.4918 1191.18 55.2155C1186.43 59.941 1179.54 64.2195 1170.98 67.8235C1153.86 75.0304 1130.18 79.5 1104 79.5C1077.82 79.5 1054.14 75.0304 1037.02 67.8235C1028.46 64.2195 1021.57 59.941 1016.82 55.2155C1012.07 50.4918 1009.5 45.3506 1009.5 40C1009.5 34.6494 1012.07 29.5082 1016.82 24.7845C1021.57 20.059 1028.46 15.7805 1037.02 12.1765C1054.14 4.96956 1077.82 0.5 1104 0.5C1130.18 0.5 1153.86 4.96956 1170.98 12.1765C1179.54 15.7805 1186.43 20.059 1191.18 24.7845C1195.93 29.5082 1198.5 34.6494 1198.5 40Z"
+              className="stroke-black dark:stroke-neutral-200"
+            />
+            <path
+              d="M1365.5 40C1365.5 45.3515 1362.94 50.4931 1358.22 55.2164C1353.5 59.9417 1346.64 64.2201 1338.13 67.8238C1321.1 75.0305 1297.55 79.5 1271.5 79.5C1245.45 79.5 1221.9 75.0305 1204.87 67.8238C1196.36 64.2201 1189.5 59.9417 1184.78 55.2164C1180.06 50.4931 1177.5 45.3515 1177.5 40C1177.5 34.6485 1180.06 29.5069 1184.78 24.7836C1189.5 20.0583 1196.36 15.7799 1204.87 12.1762C1221.9 4.96947 1245.45 0.5 1271.5 0.5C1297.55 0.5 1321.1 4.96947 1338.13 12.1762C1346.64 15.7799 1353.5 20.0583 1358.22 24.7836C1362.94 29.5069 1365.5 34.6485 1365.5 40Z"
+              className="stroke-black dark:stroke-neutral-200"
+            />
+            <path
+              d="M525.5 40C525.5 45.3506 522.927 50.4918 518.182 55.2155C513.435 59.941 506.54 64.2195 497.981 67.8235C480.865 75.0304 457.183 79.5 431 79.5C404.817 79.5 381.135 75.0304 364.019 67.8235C355.46 64.2195 348.565 59.941 343.818 55.2155C339.073 50.4918 336.5 45.3506 336.5 40C336.5 34.6494 339.073 29.5082 343.818 24.7845C348.565 20.059 355.46 15.7805 364.019 12.1765C381.135 4.96956 404.817 0.5 431 0.5C457.183 0.5 480.865 4.96956 497.981 12.1765C506.54 15.7805 513.435 20.059 518.182 24.7845C522.927 29.5082 525.5 34.6494 525.5 40Z"
+              className="stroke-black dark:stroke-neutral-200"
+            />
+            <path
+              d="M692.5 40C692.5 45.3506 689.927 50.4918 685.182 55.2155C680.435 59.941 673.54 64.2195 664.981 67.8235C647.865 75.0304 624.183 79.5 598 79.5C571.817 79.5 548.135 75.0304 531.019 67.8235C522.46 64.2195 515.565 59.941 510.818 55.2155C506.073 50.4918 503.5 45.3506 503.5 40C503.5 34.6494 506.073 29.5082 510.818 24.7845C515.565 20.059 522.46 15.7805 531.019 12.1765C548.135 4.96956 571.817 0.5 598 0.5C624.183 0.5 647.865 4.96956 664.981 12.1765C673.54 15.7805 680.435 20.059 685.182 24.7845C689.927 29.5082 692.5 34.6494 692.5 40Z"
+              className="stroke-black dark:stroke-neutral-200"
+            />
+          </svg>
+        </section>
+        <section className="pt-10 pb-10 pl-[2.5%] pr-[2.5%]  lg:grid lg:grid-cols-2 lg:grid-rows-1 dark:text-neutral-200">
+          <div >
+            <h5 className="font-medium text-3xl lg:text-4xl ">FAQ</h5>
+          </div>
+          <Faq />
+        </section>
+        <div></div>
+      </main>
+    </Transition>
+  );
 }
