@@ -135,17 +135,17 @@ body {
 /* Large text Marquee */
 
 #marquee__top {
-  animation: marquee-text 30s linear infinite;
+  animation: marquee-text 40s linear infinite;
 }
 #marquee__bottom {
-  animation: marquee-text-reverse 30s linear infinite;
+  animation: marquee-text-reverse 40s linear infinite;
 }
 
 /* End Large Text Marquee */
 
 @keyframes price-carousel {
   5% {
-    transform: translateX(0);
+    transform: translateX(0%);
   }
   100% {
     transform: translateX(-100%);
@@ -155,7 +155,7 @@ body {
 /* Marquee animation */
 @keyframes marquee-text {
   0% {
-    transform: translateX(0);
+    transform: translateX(100%);
   }
   100% {
     transform: translateX(-100%);  
@@ -164,7 +164,7 @@ body {
 
 @keyframes marquee-text-reverse {
   0% {
-    transform: translateX(0);
+    transform: translateX(-100%);
   }
   100% {
     transform: translateX(100%);  
