@@ -15,8 +15,9 @@ export default function Home() {
           headingOne="Make friends, trade, network and meet like-minded people."
           subheadingPreText="Welcome"
           subheading="
-        We're creating a hub where traders, entrepreneurs and developers of all types can join together. We have a diverse group of motivated individuals who are constantly seeking improvement. If you're passionate about trading you'll fit right in - no matter how obscure the asset.
-        "
+          Exeter's biggest group of crypto traders. If you're a trader or interested in trading, no matter the asset type, 
+          we'll give you a warm welcome.  
+          "
           buttonText="Find your people"
           buttonHref="https://my.exeterguild.com/groups/H6VXP/blockchain-and-crypto-society/memberships"
           imageSource="/cryptoSoc__img_city.webp"
@@ -26,20 +27,19 @@ export default function Home() {
           <h2 className="font-medium text-3xl lg:text-4xl">A bit about us.</h2>
           <p className="lg:text-xl lg:mt-0 mt-4">
             Our society brings together a dynamic and diverse community of
-            motivated individuals who share a common drive for continuous
-            improvement. Whether you're an experienced trader or just getting
+            traders. Whether you're an experienced trader or just getting
             started, our doors are open to all who are passionate about the
-            world of trading, regardless of the asset class they specialise in.
+            world of trading.
             Join us and be part of a thriving community where like-minded
             individuals come together to explore the exciting opportunities in
-            the crypto space.
+            crypto, NFTs and wider markets.
             <br />
             <br />
             We run frequent{" "}
             <Link href="/#events" className="underline">
               trade nights and socials
             </Link>{" "}
-            as well as a free 8 week course teaching you all the basics about
+            as well as a free 8 week bootcamp teaching you all the basics about
             trading crypto using a variety of strategies.
           </p>
         </section>
