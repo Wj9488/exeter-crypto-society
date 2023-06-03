@@ -18,11 +18,12 @@ const LinkButton: React.FC<LinkButtonProps> = ({ href, text }) => {
     controls.start({ rotate: 0 });
   };
   return (
-    <button className="px-4 mt-4 py-2 bg-neutral-900 dark:bg-neutral-200 dark:text-black rounded-lg text-white flex justify-around gap-2
+    <button className="hover__button px-4 mt-4 py-2 bg-neutral-900 dark:bg-neutral-200 dark:text-black rounded-lg text-white flex justify-around gap-2
     items-center"
     onMouseEnter={handleMouseEnter}
     onMouseLeave={handleMouseLeave}>
-      <Link href={href} legacyBehavior><a target="_blank">{text}</a></Link>
+      {/* <Link href={href} legacyBehavior><a target="_blank">{text}</a></Link> */}
+      <Link href={href}>{text}</Link>
       <anim.svg
         width="22"
         height="22"

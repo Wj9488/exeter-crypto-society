@@ -19,6 +19,10 @@ const Committee = () => {
     controls.start({ rotate: 0 });
   };
 
+  // type with underscore and no caps between words for better UX
+  const availableRole = "social_sec"
+  const availableRoleYear = "2023_2024"
+
   return (
     <Transition>
       <main>
@@ -28,8 +32,8 @@ const Committee = () => {
           subheading="
             Get to know the committee members for this year and what each of them wants to bring to the society.
             "
-          buttonText="We're recruiting"
-          buttonHref="/"
+          buttonText="Social sec role available"
+          buttonHref={`/committee/application?position=${availableRole}?year=${availableRoleYear}`}
           imageSource="/cryptoSoc__img_committee.webp"
           imageAlt="Crypto Society Committee"
         />
@@ -132,9 +136,9 @@ const Committee = () => {
             </ul>
           </div>
 
-          <h2 className="dark:text-neutral-200 text-4xl pb-20 pt-10 font-[500]">Roles available</h2>
+          <h3 className="dark:text-neutral-200 text-4xl pb-20 pt-10 font-[500]">Roles available</h3>
 
-          <Link href="/">
+          <Link href={`/committee/application?position=${availableRole}?year=${availableRoleYear}`}>
             <div className="flex items-center justify-between border__top_bottom pb-4 pt-4 border-black dark:border-neutral-200
             transition-opacity"
             onMouseEnter={handleMouseEnter}

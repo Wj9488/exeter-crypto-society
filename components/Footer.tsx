@@ -117,7 +117,10 @@ const Footer = () => {
               <Link href="/committee">Committee</Link>
             </li>
             <li className="hover__link">
-              <Link legacyBehavior href="/">
+              <Link href="/bootcamp">Bootcamp</Link>
+            </li>
+            <li className="hover__link">
+              <Link legacyBehavior href="https://my.exeterguild.com/groups/H6VXP/blockchain-and-crypto-society/memberships">
                 <a target="_blank">Membership</a>
               </Link>
             </li>

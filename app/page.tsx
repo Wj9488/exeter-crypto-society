@@ -5,10 +5,9 @@ import GenericHeader from "@/components/GenericHeader";
 import Transition from "@/components/Transition";
 import LinkButton from "@/components/LinkButton";
 import Faq from "@/components/Faq";
-import Image from "next/image"
+import Image from "next/image";
 
 export default function Home() {
-  
   return (
     <Transition>
       <main>
@@ -26,16 +25,18 @@ export default function Home() {
         <section className="pt-10 pb-10 pl-[2.5%] pr-[2.5%]  lg:grid lg:grid-cols-2 lg:grid-rows-1 dark:text-neutral-200">
           <h2 className="font-medium text-3xl lg:text-4xl">A bit about us.</h2>
           <p className="lg:text-xl lg:mt-0 mt-4">
-            We are committed to fostering an inclusive and supportive
-            environment that encourages growth, learning, and collaboration.
-            Whether you're a student, faculty member, or simply have a keen
-            interest in crypto, we welcome you to join our thriving society and
-            embark on an extraordinary journey of discovery and personal
-            development.
+            Our society brings together a dynamic and diverse community of
+            motivated individuals who share a common drive for continuous
+            improvement. Whether you're an experienced trader or just getting
+            started, our doors are open to all who are passionate about the
+            world of trading, regardless of the asset class they specialise in.
+            Join us and be part of a thriving community where like-minded
+            individuals come together to explore the exciting opportunities in
+            the crypto space.
             <br />
             <br />
             We run frequent{" "}
-            <Link href="#" className="underline">
+            <Link href="/#events" className="underline">
               trade nights and socials
             </Link>{" "}
             as well as a free 8 week course teaching you all the basics about
@@ -87,11 +88,55 @@ export default function Home() {
             />
           </svg>
         </section>
-        <section className="pt-10 pb-10 pl-[2.5%] pr-[2.5%] dark:text-neutral-200">
+        <section className="pt-10 pb-10 pl-[2.5%] lg:pr-[2.5%] dark:text-neutral-200">
           <h3 className="font-medium text-3xl lg:text-4xl">
             What's included in the membership?
           </h3>
-          <div className="w-[100%] h-[1px] bg-black dark:bg-neutral-200 mt-6"></div>
+          <div className="lg:grid grid-cols-3 grid-rows-1 place-items-end mt-10 lg:mt-20">
+            <div className="bg-neutral-100 dark:bg-neutral-900 min-h-[20vh] lg:h-[min-content] p-5 border__radius_top_left lg:mb-0 mb-[-35px]">
+              <p className="text-2xl mb-2 font-[500]">// Weekly Socials</p>
+              <p className="text-sm lg:text-base lg:mb-0 mb-10">
+                Connect with like-minded individuals,
+                exchange market insights, and explore new strategies in a
+                friendly and welcoming environment. Expand your network and be
+                part of a thriving community.
+              </p>
+            </div>
+            <div className="bg-neutral-200 dark:bg-neutral-800 lg:ml-2.5 xl:ml-5 min-h-[20vh] lg:h-[min-content]  p-5 border__radius_top_left lg:mb-0 mb-[-35px]">
+              <p className="text-2xl mb-2 font-[500]">// Trade Nights</p>
+              <p className="text-sm lg:text-base lg:mb-0 mb-10">
+                Experience real-time trading at our exclusive Trading Nights. 
+                Designed to enhance
+                your skills and foster a collaborative environment, these events
+                provide an opportunity to trade live alongside others or discuss trade ideas. 
+                <br />
+                <br />
+                Engage in live
+                trading sessions, exchange strategies, and stay updated on
+                market trends.
+              </p>
+            </div>
+            <div className="bg-neutral-300 dark:bg-neutral-700 lg:ml-2.5 xl:ml-5 min-h-[20vh] lg:h-[min-content]  p-5 border__radius_top_left lg:mb-0 mb-[-35px]">
+              <p className="text-2xl mb-2 font-[500]">// Trading Bootcamp</p>
+              <p className="text-sm lg:text-base lg:mb-0 mb-10">
+                Learn
+                cryptocurrency trading with our comprehensive crypto bootcamp.
+                Specifically tailored for beginners, this program is
+                led by a team of seasoned traders with a combined experience of
+                over 14 years and crypto profits of over 1000%. 
+                Gain a solid foundation in trading principles,
+                learn effective strategies, and develop the necessary skills to
+                navigate the dynamic crypto market confidently. 
+                <br />
+                <br />
+                Whether you're
+                new to trading or seeking to refine your techniques, our Trading
+                Bootcamp provides the knowledge and expertise you need to make
+                informed trading decisions. <Link href="/bootcamp" className="underline">Find out more.</Link>
+              </p>
+            </div>
+          </div>
+          {/* <div className="w-[100%] h-[1px] bg-black dark:bg-neutral-200 mt-6"></div>
           <div className="mt-6">
             <p className="text-2xl">- Weekly socials</p>
             <p className="mt-2">
@@ -111,29 +156,168 @@ export default function Home() {
             <p className="mt-2">
               Our highly experienced committee will teach you the basics of crypto trading for free.
             </p>
-          </div>
+          </div> */}
         </section>
         <section className="lg:pt-20 lg:pb-20 flex items-center justify-center overflow-hidden">
-          <svg width="1381" height="82" viewBox="0 0 1381 82" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="1261.5" y="0.5" width="119" height="79" rx="9.5" className="stroke-black dark:stroke-neutral-200"/>
-            <rect x="1121.5" y="1.5" width="119" height="79" rx="9.5" className="stroke-black dark:stroke-neutral-200"/>
-            <rect x="981.5" y="0.5" width="119" height="79" rx="9.5" className="stroke-black dark:stroke-neutral-200"/>
-            <rect x="841.5" y="1.5" width="119" height="79" rx="9.5" className="stroke-black dark:stroke-neutral-200"/>
-            <rect x="701.5" y="1.5" width="119" height="79" rx="9.5" className="stroke-black dark:stroke-neutral-200"/>
-            <rect x="561.5" y="2.5" width="119" height="79" rx="9.5" className="stroke-black dark:stroke-neutral-200"/>
-            <rect x="421.5" y="1.5" width="119" height="79" rx="9.5" className="stroke-black dark:stroke-neutral-200"/>
-            <rect x="281.5" y="2.5" width="119" height="79" rx="9.5" className="stroke-black dark:stroke-neutral-200"/>
-            <rect x="140.5" y="1.5" width="119" height="79" rx="9.5" className="stroke-black dark:stroke-neutral-200"/>
-            <rect x="0.5" y="2.5" width="119" height="79" rx="9.5" className="stroke-black dark:stroke-neutral-200"/>
-            <rect x="541.5" y="37.5" width="19" height="9" rx="2" className="stroke-black dark:stroke-neutral-200"/>
-            <rect x="260.5" y="37.5" width="20" height="9" rx="2" className="stroke-black dark:stroke-neutral-200"/>
-            <rect x="401.5" y="37.5" width="19" height="9" rx="2" className="stroke-black dark:stroke-neutral-200"/>
-            <rect x="120.5" y="37.5" width="19" height="9" rx="2" className="stroke-black dark:stroke-neutral-200"/>
-            <rect x="681.5" y="37.5" width="19" height="9" rx="2" className="stroke-black dark:stroke-neutral-200"/>
-            <rect x="821.5" y="37.5" width="19" height="9" rx="2" className="stroke-black dark:stroke-neutral-200"/>
-            <rect x="961.5" y="37.5" width="19" height="9" rx="2" className="stroke-black dark:stroke-neutral-200"/>
-            <rect x="1101.5" y="37.5" width="19" height="9" rx="2" className="stroke-black dark:stroke-neutral-200"/>
-            <rect x="1241.5" y="37.5" width="19" height="9" rx="2" className="stroke-black dark:stroke-neutral-200"/>
+          <svg
+            width="1381"
+            height="82"
+            viewBox="0 0 1381 82"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              x="1261.5"
+              y="0.5"
+              width="119"
+              height="79"
+              rx="9.5"
+              className="stroke-black dark:stroke-neutral-200"
+            />
+            <rect
+              x="1121.5"
+              y="1.5"
+              width="119"
+              height="79"
+              rx="9.5"
+              className="stroke-black dark:stroke-neutral-200"
+            />
+            <rect
+              x="981.5"
+              y="0.5"
+              width="119"
+              height="79"
+              rx="9.5"
+              className="stroke-black dark:stroke-neutral-200"
+            />
+            <rect
+              x="841.5"
+              y="1.5"
+              width="119"
+              height="79"
+              rx="9.5"
+              className="stroke-black dark:stroke-neutral-200"
+            />
+            <rect
+              x="701.5"
+              y="1.5"
+              width="119"
+              height="79"
+              rx="9.5"
+              className="stroke-black dark:stroke-neutral-200"
+            />
+            <rect
+              x="561.5"
+              y="2.5"
+              width="119"
+              height="79"
+              rx="9.5"
+              className="stroke-black dark:stroke-neutral-200"
+            />
+            <rect
+              x="421.5"
+              y="1.5"
+              width="119"
+              height="79"
+              rx="9.5"
+              className="stroke-black dark:stroke-neutral-200"
+            />
+            <rect
+              x="281.5"
+              y="2.5"
+              width="119"
+              height="79"
+              rx="9.5"
+              className="stroke-black dark:stroke-neutral-200"
+            />
+            <rect
+              x="140.5"
+              y="1.5"
+              width="119"
+              height="79"
+              rx="9.5"
+              className="stroke-black dark:stroke-neutral-200"
+            />
+            <rect
+              x="0.5"
+              y="2.5"
+              width="119"
+              height="79"
+              rx="9.5"
+              className="stroke-black dark:stroke-neutral-200"
+            />
+            <rect
+              x="541.5"
+              y="37.5"
+              width="19"
+              height="9"
+              rx="2"
+              className="stroke-black dark:stroke-neutral-200"
+            />
+            <rect
+              x="260.5"
+              y="37.5"
+              width="20"
+              height="9"
+              rx="2"
+              className="stroke-black dark:stroke-neutral-200"
+            />
+            <rect
+              x="401.5"
+              y="37.5"
+              width="19"
+              height="9"
+              rx="2"
+              className="stroke-black dark:stroke-neutral-200"
+            />
+            <rect
+              x="120.5"
+              y="37.5"
+              width="19"
+              height="9"
+              rx="2"
+              className="stroke-black dark:stroke-neutral-200"
+            />
+            <rect
+              x="681.5"
+              y="37.5"
+              width="19"
+              height="9"
+              rx="2"
+              className="stroke-black dark:stroke-neutral-200"
+            />
+            <rect
+              x="821.5"
+              y="37.5"
+              width="19"
+              height="9"
+              rx="2"
+              className="stroke-black dark:stroke-neutral-200"
+            />
+            <rect
+              x="961.5"
+              y="37.5"
+              width="19"
+              height="9"
+              rx="2"
+              className="stroke-black dark:stroke-neutral-200"
+            />
+            <rect
+              x="1101.5"
+              y="37.5"
+              width="19"
+              height="9"
+              rx="2"
+              className="stroke-black dark:stroke-neutral-200"
+            />
+            <rect
+              x="1241.5"
+              y="37.5"
+              width="19"
+              height="9"
+              rx="2"
+              className="stroke-black dark:stroke-neutral-200"
+            />
           </svg>
         </section>
         <section className="pt-10 pb-10 pl-[2.5%] pr-[2.5%]  dark:text-neutral-200">
@@ -143,17 +327,16 @@ export default function Home() {
           <div className="lg:grid lg:grid-cols-2 lg:grid-rows-2 gap-4 lg:gap-8 pt-5">
             <div className="pt-6 lg:pt-0">
               <div className="w-full">
-                <Image 
-                width={400}
-                height={800}
-                src="/cryptoSoc__img_bitcoin.webp"
-                alt="Crypto Society Course"
-                className="w-full rounded-xl"
+                <Image
+                  width={400}
+                  height={800}
+                  src="/cryptoSoc__img_bitcoin.webp"
+                  alt="Crypto Society Course"
+                  className="w-full rounded-xl"
                 />
               </div>
               <p className="text-2xl  font-[500] mt-4">
-                First weekly trading session
-                - 09/09/2023
+                First weekly trading session - 09/09/2023
               </p>
               <p className="mt-2 lg:text-xl">
                 Join us for our first ever trade night, we’ll be tackling
@@ -164,42 +347,40 @@ export default function Home() {
             </div>
             <div className="pt-6 lg:pt-0">
               <div className="w-full">
-                <Image 
-                width={400}
-                height={800}
-                src="/cryptoSoc__img_about.webp"
-                alt="Crypto Society Course"
-                className="w-full rounded-xl"
+                <Image
+                  width={400}
+                  height={800}
+                  src="/cryptoSoc__img_about.webp"
+                  alt="Crypto Society Course"
+                  className="w-full rounded-xl"
                 />
               </div>
               <p className="text-2xl font-[500] mt-4">
-                First weekly social at The Ram
-                - 14/09/2023
+                First weekly social at The Ram - 14/09/2023
               </p>
               <p className="mt-2 lg:text-xl">
-                Come meet the committee and other likeminded individuals 
-                to talk about everything trading.
+                Come meet the committee and other likeminded individuals to talk
+                about everything trading.
               </p>
               <LinkButton text="Get tickets here" href="#" />
             </div>
             <div className="pt-6 lg:pt-0">
               <div className="w-full">
-                <Image 
-                width={400}
-                height={800}
-                src="/cryptoSoc__img_course.webp"
-                alt="Crypto Society Course"
-                className="w-full rounded-xl"
+                <Image
+                  width={400}
+                  height={800}
+                  src="/cryptoSoc__img_course.webp"
+                  alt="Crypto Society Course"
+                  className="w-full rounded-xl"
                 />
               </div>
               <p className="text-2xl font-[500] mt-4">
-                Trading Bootcamp Lesson 1
-                - 24/09/2023
+                Trading Bootcamp Lesson 1 - 24/09/2023
               </p>
               <p className="mt-2 lg:text-xl">
-                The first lesson of the 8 week bootcamp. You'll learn
-                the basics of what trading is and some of the advantages
-                of knowing how to trade.
+                The first lesson of the 8 week bootcamp. You'll learn the basics
+                of what trading is and some of the advantages of knowing how to
+                trade.
               </p>
               <LinkButton text="Enroll for free" href="#" />
             </div>
@@ -248,7 +429,7 @@ export default function Home() {
           </svg>
         </section>
         <section className="pt-10 pb-10 pl-[2.5%] pr-[2.5%]  lg:grid lg:grid-cols-2 lg:grid-rows-1 dark:text-neutral-200">
-          <div >
+          <div>
             <h5 className="font-medium text-3xl lg:text-4xl ">FAQ</h5>
           </div>
           <Faq />

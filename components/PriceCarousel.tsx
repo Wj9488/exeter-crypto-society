@@ -1,5 +1,6 @@
 "use client";
 
+import {motion as anim} from "framer-motion"
 import { QueryClient, QueryClientProvider, useQuery } from "react-query";
 
 interface CryptoData {
@@ -41,7 +42,10 @@ const PriceCarousel = ({carbg} : CarouselProps): JSX.Element => {
   }
 
   return (
-    <div className={`overflow-x-hidden p-2 min-h-[4vh] flex items-center bg-[${carbg}]`}>
+    <anim.div className={`overflow-x-hidden p-2 min-h-[4vh] flex items-center bg-[${carbg}]`}
+    initial={{ opacity: 0 }} 
+    animate={{ opacity: 1 }}
+    transition={{ delay: 0.05 }}>
         <div className="price__carousel price__carousel_animation">
         {data?.map((crypto) => (
             <div key={crypto.id} className="price__carousel_item">
@@ -58,7 +62,7 @@ const PriceCarousel = ({carbg} : CarouselProps): JSX.Element => {
             </div>
         ))}
         </div>
-    </div>
+    </anim.div>
   );
 };
 

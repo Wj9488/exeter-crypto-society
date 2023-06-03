@@ -18,6 +18,9 @@ const Course = () => {
             imageSource="/cryptoSoc__img_bitcoin.webp"
             imageAlt="Busy people"
             />
+            <section className="pl-[2.5%] pr-[2.5%] mb-10 mt-10">
+              <h2 className="dark:text-neutral-200 text-4xl pb-10 font-[500]">Coming soon...</h2>
+            </section>
         </main>
     </Transition>
   )
