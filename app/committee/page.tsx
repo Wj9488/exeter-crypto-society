@@ -33,7 +33,7 @@ const Committee = () => {
             Get to know the committee members for this year and what each of them wants to bring to the society.
             "
           buttonText="Social sec role available"
-          buttonHref={`/committee/application?position=${availableRole}?year=${availableRoleYear}`}
+          buttonHref={`/committee/application?position=${availableRole}&year=${availableRoleYear}`}
           imageSource="/cryptoSoc__img_committee.webp"
           imageAlt="Crypto Society Committee"
         />
@@ -138,7 +138,7 @@ const Committee = () => {
 
           <h3 className="dark:text-neutral-200 text-4xl pb-20 pt-10 font-[500]">Roles available</h3>
 
-          <Link href={`/committee/application?position=${availableRole}?year=${availableRoleYear}`}>
+          <Link href={`/committee/application?position=${availableRole}&year=${availableRoleYear}`}>
             <div className="flex items-center justify-between border__top_bottom pb-4 pt-4 border-black dark:border-neutral-200
             transition-opacity"
             onMouseEnter={handleMouseEnter}

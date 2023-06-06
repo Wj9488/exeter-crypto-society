@@ -45,7 +45,8 @@ const PriceCarousel = ({carbg} : CarouselProps): JSX.Element => {
     <anim.div className={`overflow-x-hidden p-2 min-h-[4vh] flex items-center bg-[${carbg}]`}
     initial={{ opacity: 0 }} 
     animate={{ opacity: 1 }}
-    transition={{ delay: 0.05 }}>
+    transition={{ ease: "easeOut", duration: 0.5}}
+    >
         <div className="price__carousel price__carousel_animation">
         {data?.map((crypto) => (
             <div key={crypto.id} className="price__carousel_item">

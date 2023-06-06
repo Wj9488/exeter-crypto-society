@@ -21,6 +21,7 @@ const GenericHeader = ({
   buttonText,
   buttonHref,
 }: HeaderProps) => {
+  
   return (
     <header className="pt-16 pb-16 lg:pt-20 lg:pb-20 n__width dark:text-neutral-200">
       <h1 className="text-5xl lg:text-7xl xl:text-8xl 2xl:text-[6.25rem] font-[500]">

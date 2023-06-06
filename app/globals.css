@@ -77,7 +77,7 @@ body {
 
 /* Border radius */
 .border__radius_top_left {
-  border-top-left-radius: 40px;
+  border-top-left-radius: 20px;
 }
 /* Border radius end */
 
@@ -178,10 +178,10 @@ body {
     display: block;
   }
   #marquee__top {
-    animation: marquee-text 10s linear infinite;
+    animation: marquee-text 20s linear infinite;
   }
   #marquee__bottom {
-    animation: marquee-text-reverse 10s linear infinite;
+    animation: marquee-text-reverse 20s linear infinite;
   }
   .price__carousel_animation {
     animation: price-carousel 20s linear infinite; 

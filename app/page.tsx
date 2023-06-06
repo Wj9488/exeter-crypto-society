@@ -29,10 +29,9 @@ export default function Home() {
             Our society brings together a dynamic and diverse community of
             traders. Whether you're an experienced trader or just getting
             started, our doors are open to all who are passionate about the
-            world of trading.
-            Join us and be part of a thriving community where like-minded
-            individuals come together to explore the exciting opportunities in
-            crypto, NFTs and wider markets.
+            world of trading. Join us and be part of a thriving community where
+            like-minded individuals come together to explore the exciting
+            opportunities in crypto, NFTs and wider markets.
             <br />
             <br />
             We run frequent{" "}
@@ -93,46 +92,92 @@ export default function Home() {
             What's included in the membership?
           </h3>
           <div className="lg:grid grid-cols-3 grid-rows-1 place-items-end mt-10 lg:mt-20">
-            <div className="bg-neutral-100 dark:bg-neutral-900 min-h-[20vh] lg:h-[min-content] p-5 border__radius_top_left lg:mb-0 mb-[-35px]">
-              <p className="text-2xl mb-2 font-[500]">// Weekly Socials</p>
+            <div className="border border-black dark:border-neutral-200 min-h-[20vh] lg:h-[min-content] p-5 border__radius_top_left lg:mb-0 mb-2">
+              <div className="flex items-center justify-between">
+                <p className="text-3xl mb-2 font-[200]">Weekly Socials</p>
+                <svg
+                  width="30"
+                  height="30"
+                  viewBox="0 0 30 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="15" cy="15" r="14.5" className="stroke-black dark:stroke-neutral-200" />
+                </svg>
+              </div>
+              <div className="h-[1px] w-full bg-black dark:bg-neutral-200 mt-2 mb-4"></div>
               <p className="text-sm lg:text-base lg:mb-0 mb-10">
-                Connect with like-minded individuals,
-                exchange market insights, and explore new strategies in a
-                friendly and welcoming environment. Expand your network and be
-                part of a thriving community.
+                Connect with like-minded individuals, exchange market insights,
+                and explore new strategies in a friendly and welcoming
+                environment. Expand your network and be part of a thriving
+                community.
               </p>
             </div>
-            <div className="bg-neutral-200 dark:bg-neutral-800 lg:ml-2.5 xl:ml-5 min-h-[20vh] lg:h-[min-content]  p-5 border__radius_top_left lg:mb-0 mb-[-35px]">
-              <p className="text-2xl mb-2 font-[500]">// Trade Nights</p>
+            <div className="border border-black dark:border-neutral-200 lg:ml-2.5 xl:ml-5 min-h-[20vh] lg:h-[min-content]  p-5 border__radius_top_left lg:mb-0 mb-2">
+              <div className="flex items-center justify-between">
+                <p className="text-3xl mb-2 font-[200]">Trade Nights</p>
+                <svg
+                  width="33"
+                  height="29"
+                  viewBox="0 0 33 29"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17.799 1.25L32.0885 26C32.6658 27 31.9441 28.25 30.7894 28.25H2.21058C1.05588 28.25 0.334191 27 0.911542 26L15.201 1.25C15.7783 0.249997 17.2217 0.249998 17.799 1.25Z"
+                    className="stroke-black dark:stroke-neutral-200"
+                  />
+                </svg>
+              </div>
+              <div className="h-[1px] w-full bg-black dark:bg-neutral-200 mt-2 mb-4"></div>
               <p className="text-sm lg:text-base lg:mb-0 mb-10">
-                Experience real-time trading at our exclusive Trading Nights. 
-                Designed to enhance
-                your skills and foster a collaborative environment, these events
-                provide an opportunity to trade live alongside others or discuss trade ideas. 
+                Experience real-time trading at our exclusive Trading Nights.
+                Designed to enhance your skills and foster a collaborative
+                environment, these events provide an opportunity to trade live
+                alongside others or discuss trade ideas.
                 <br />
                 <br />
-                Engage in live
-                trading sessions, exchange strategies, and stay updated on
-                market trends.
+                Engage in live trading sessions, exchange strategies, and stay
+                updated on market trends.
               </p>
             </div>
-            <div className="bg-neutral-300 dark:bg-neutral-700 lg:ml-2.5 xl:ml-5 min-h-[20vh] lg:h-[min-content]  p-5 border__radius_top_left lg:mb-0 mb-[-35px]">
-              <p className="text-2xl mb-2 font-[500]">// Trading Bootcamp</p>
+            <div className="border border-black dark:border-neutral-200 lg:ml-2.5 xl:ml-5 min-h-[20vh] lg:h-[min-content]  p-5 border__radius_top_left lg:mb-0 mb-2">
+              <div className="flex items-center justify-between">
+                <p className="text-3xl mb-2 font-[200]">Crypto Bootcamp</p>
+                <svg
+                  width="30"
+                  height="30"
+                  viewBox="0 0 30 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="0.5"
+                    y="0.5"
+                    width="29"
+                    height="29"
+                    rx="1.5"
+                    className="dark:stroke-neutral-200 stroke-black"
+                  />
+                </svg>
+              </div>
+              <div className="h-[1px] w-full bg-black dark:bg-neutral-200 mt-2 mb-4"></div>
               <p className="text-sm lg:text-base lg:mb-0 mb-10">
-                Learn
-                cryptocurrency trading with our comprehensive crypto bootcamp.
-                Specifically tailored for beginners, this program is
+                Learn cryptocurrency trading with our comprehensive crypto
+                bootcamp. Specifically tailored for beginners, this program is
                 led by a team of seasoned traders with a combined experience of
-                over 14 years and crypto profits of over 1000%. 
-                Gain a solid foundation in trading principles,
-                learn effective strategies, and develop the necessary skills to
-                navigate the dynamic crypto market confidently. 
+                over 14 years and crypto profits of over 1000%. Gain a solid
+                foundation in trading principles, learn effective strategies,
+                and develop the necessary skills to navigate the dynamic crypto
+                market confidently.
                 <br />
                 <br />
-                Whether you're
-                new to trading or seeking to refine your techniques, our Trading
-                Bootcamp provides the knowledge and expertise you need to make
-                informed trading decisions. <Link href="/bootcamp" className="underline">Find out more.</Link>
+                Whether you're new to trading or seeking to refine your
+                techniques, our Trading Bootcamp provides the knowledge and
+                expertise you need to make informed trading decisions.{" "}
+                <Link href="/bootcamp" className="underline">
+                  Find out more.
+                </Link>
               </p>
             </div>
           </div>
