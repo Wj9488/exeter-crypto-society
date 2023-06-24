@@ -54,6 +54,15 @@ body {
   animation: price-carousel 40s linear infinite; 
 }
 
+/* List styles */
+.list-style-square {
+  list-style: square;
+}
+.list-style-circle {
+  list-style: circle;
+}
+/* List styles END */
+
 /* Borders */
 
 .border__top {

@@ -8,6 +8,9 @@ import Faq from "@/components/Faq";
 import Image from "next/image";
 
 export default function Home() {
+  // Marquee Content: 
+  const marqueeOneData = [  "BITCOIN",  "CRYPTO",  "COMMODITIES",  "OPTIONS",  "STOCKS",  "FUTURES",  "ETHEREUM",  "S&P500",  "NASDAQ",  "NFTS",  "SOLANA",  "BITCOIN",  "ETHEREUM",  "S&P500",  "NASDAQ",  "NFTS",  "SOLANA"];
+
   return (
     <Transition>
       <main>
@@ -42,8 +45,8 @@ export default function Home() {
             trading crypto using a variety of strategies.
           </p>
         </section>
-        <section id="events" className="lg:pb-10">
-          <Marquee />
+        <section id="events" className="">
+          <Marquee listStyle="list-style-square" arrayData={marqueeOneData} />
         </section>
         <section className="lg:pt-10 lg:pb-20 flex items-center justify-center overflow-hidden">
           <svg
@@ -94,7 +97,7 @@ export default function Home() {
           <div className="lg:grid grid-cols-3 grid-rows-1 place-items-end mt-10 lg:mt-20">
             <div className="border border-black dark:border-neutral-200 min-h-[20vh] lg:h-[min-content] p-5 border__radius_top_left lg:mb-0 mb-2">
               <div className="flex items-center justify-between">
-                <p className="text-3xl mb-2 font-[200]">Weekly Socials</p>
+                <p className="text-3xl mb-2 font-[500]">Weekly Socials</p>
                 <svg
                   width="30"
                   height="30"
@@ -115,7 +118,7 @@ export default function Home() {
             </div>
             <div className="border border-black dark:border-neutral-200 lg:ml-2.5 xl:ml-5 min-h-[20vh] lg:h-[min-content]  p-5 border__radius_top_left lg:mb-0 mb-2">
               <div className="flex items-center justify-between">
-                <p className="text-3xl mb-2 font-[200]">Trade Nights</p>
+                <p className="text-3xl mb-2 font-[500]">Trade Nights</p>
                 <svg
                   width="33"
                   height="29"
@@ -143,7 +146,7 @@ export default function Home() {
             </div>
             <div className="border border-black dark:border-neutral-200 lg:ml-2.5 xl:ml-5 min-h-[20vh] lg:h-[min-content]  p-5 border__radius_top_left lg:mb-0 mb-2">
               <div className="flex items-center justify-between">
-                <p className="text-3xl mb-2 font-[200]">Crypto Bootcamp</p>
+                <p className="text-3xl mb-2 font-[500]">Crypto Bootcamp</p>
                 <svg
                   width="30"
                   height="30"

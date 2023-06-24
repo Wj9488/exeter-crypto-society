@@ -1,6 +1,7 @@
 "use client";
 
 import {motion as anim} from "framer-motion"
+import Marquee from "react-fast-marquee"
 import { QueryClient, QueryClientProvider, useQuery } from "react-query";
 
 interface CryptoData {
@@ -47,22 +48,24 @@ const PriceCarousel = ({carbg} : CarouselProps): JSX.Element => {
     animate={{ opacity: 1 }}
     transition={{ ease: "easeOut", duration: 0.5}}
     >
-        <div className="price__carousel price__carousel_animation">
-        {data?.map((crypto) => (
-            <div key={crypto.id} className="price__carousel_item">
-            <span className="uppercase dark:text-[#fafafa]">{crypto.symbol} </span>
-            <span
-                className={
-                crypto.price_change_percentage_24h < 0
-                    ? "px-3 py-1 dark:text-red-400 text-[#EF476F] rounded-2xl"
-                    : "px-3 py-1 dark:text-emerald-400 text-emerald-500 rounded-2xl"
-                }
-            >
-                {crypto.price_change_percentage_24h.toFixed(2)}%
-            </span>
-            </div>
-        ))}
-        </div>
+        <Marquee className="overflow-hidden">
+          <div className="flex items-center gap-5">
+            {data?.map((crypto) => (
+                <div key={crypto.id} className="">
+                <span className="uppercase dark:text-[#fafafa]">{crypto.symbol} </span>
+                <span
+                    className={
+                    crypto.price_change_percentage_24h < 0
+                        ? "px-3 py-1 dark:text-red-400 text-[#EF476F] rounded-2xl"
+                        : "px-3 py-1 dark:text-emerald-400 text-emerald-500 rounded-2xl"
+                    }
+                >
+                    {crypto.price_change_percentage_24h.toFixed(2)}%
+                </span>
+                </div>
+            ))}
+          </div>
+        </Marquee>
     </anim.div>
   );
 };

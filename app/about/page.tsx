@@ -1,6 +1,5 @@
 "use client";
 import GenericHeader from "@/components/GenericHeader";
-import Head from "next/head";
 import Transition from "@/components/Transition";
 
 // const session = null
@@ -10,7 +9,7 @@ const About = () => {
 
   return (
     <Transition>
-      <main>
+      <main className="">
         <GenericHeader
           headingOne="Find out more about the society."
           subheadingPreText="About"
