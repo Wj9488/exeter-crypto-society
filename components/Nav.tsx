@@ -214,8 +214,8 @@ const Nav = () => {
               Click to toggle navigation menu
             </span>
             {menuOpen ? (
-              <div className="bg-neutral-200 dark:bg-neutral-800 rounded-xl p-[0.6rem]">
-                <svg
+              <div className="bg-neutral-200 dark:bg-neutral-800 rounded-xl p-[0.5rem] text-xs">
+                {/* <svg
                   width="17"
                   height="17"
                   viewBox="0 0 17 17"
@@ -240,11 +240,12 @@ const Nav = () => {
                     transform="rotate(45 2.0459 0.131348)"
                     className="fill-black dark:fill-neutral-200"
                   />
-                </svg>
+                </svg> */}
+                CLOSE
               </div>
             ) : (
-              <div className="bg-neutral-200 dark:bg-neutral-800 rounded-xl p-[0.6rem]">
-                <svg
+              <div className="bg-neutral-200 dark:bg-neutral-800 rounded-xl p-[0.5rem] text-xs">
+                {/* <svg
                   width="21"
                   height="12"
                   viewBox="0 0 21 12"
@@ -271,7 +272,8 @@ const Nav = () => {
                     rx="0.75"
                     className="fill-black dark:fill-neutral-200"
                   />
-                </svg>
+                </svg> */}
+                MENU
               </div>
             )}
           </div>

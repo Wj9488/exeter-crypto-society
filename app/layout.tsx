@@ -15,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className='bg-[#fafafa] dark:bg-[#070707]' id='exeterCryptoSociety__appWrap_v1'>
+      <body className='bg-[#fafafa] dark:bg-[#070707] overflow-x-hidden' id='exeterCryptoSociety__appWrap_v1'>
         <Nav/>
         <PriceCarousel />
         {children}
