@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import LinkButton from "./LinkButton";
+import { motion as anim } from "framer-motion"
 
 interface HeaderProps {
   headingOne: string;
@@ -21,12 +22,49 @@ const GenericHeader = ({
   buttonText,
   buttonHref,
 }: HeaderProps) => {
+
+  const bannerAnimation = {
+    animate: {
+      transition: {
+        delayChildren: 0.4,
+        staggerChildren: 0.1,
+      }
+    }
+  }
+
+  const letterAnimation = {
+    initial: {
+      y: 125,
+      // opacity: 0,
+      rotate: "2deg"
+    },
+    animate: {
+      y: 0,
+      // opacity: 1,
+      rotate: "0deg",
+      transition: {
+        ease: "easeIn",
+        duration: 0.5,
+      }
+    }
+  }
   
   return (
-    <header className="pt-16 pb-16 lg:pt-20 lg:pb-20 n__width dark:text-neutral-200">
-      <h1 className="text-5xl lg:text-7xl xl:text-8xl 2xl:text-[6.25rem] font-[500]">
-        {headingOne}
-      </h1>
+    <anim.header className="pt-16 pb-16 lg:pt-20 lg:pb-20 n__width dark:text-neutral-200"
+    variants={bannerAnimation}
+    animate="animate"
+    initial="initial"
+    >
+      <div className="relative overflow-hidden pb-2">
+      {/* <anim.h1 className="text-5xl lg:text-7xl xl:text-8xl 2xl:text-[6.25rem] font-[500] relative block"
+      variants={letterAnimation}
+      animate="animate"
+      initial="initial"
+      >
+      { headingOne }
+      </anim.h1> */}
+      <h1 className="text-5xl lg:text-7xl xl:text-8xl 2xl:text-[6.25rem] font-[500]">{headingOne}</h1>
+      </div>
       <div className="lg:ml-[0%]">
         <p className="mt-20 uppercase text-xs">{subheadingPreText}</p>
         <p className="text-lg lg:text-xl mt-4">{subheading}</p>
@@ -60,7 +98,7 @@ const GenericHeader = ({
           loading="eager"
         />
       </div>
-    </header>
+    </anim.header>
   );
 };
 

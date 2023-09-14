@@ -56,7 +56,7 @@ const Nav = () => {
   };
 
   return (
-    <nav className="sticky top-0 z-10 bg-[#fafafa] dark:bg-[#070707] ">
+    <nav className="sticky top-0 z-10 bg-[#fafafa] dark:bg-[#1b1b1b] transition-colors duration-250">
       <anim.div
         className="flex items-center justify-between pl-[2.5%] pr-[2.5%] min-h-[6vh]"
         initial={{ opacity: 0 }}
@@ -152,11 +152,11 @@ const Nav = () => {
               <span className="hover__link">About</span>
             </Link>
           </li>
-          <li className="desktop__view_only">
+          {/* <li className="desktop__view_only">
             <Link className="" href="/bootcamp">
               <span className="hover__link">Trading Bootcamp</span>
             </Link>
-          </li>
+          </li> */}
           <li className="desktop__view_only">
             <Link className="" href="/committee">
               <span className="hover__link">Committee</span>

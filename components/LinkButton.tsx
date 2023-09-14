@@ -23,7 +23,7 @@ const LinkButton: React.FC<LinkButtonProps> = ({ href, text }) => {
     onMouseEnter={handleMouseEnter}
     onMouseLeave={handleMouseLeave}>
       {/* <Link href={href} legacyBehavior><a target="_blank">{text}</a></Link> */}
-      <Link href={href}>{text}</Link>
+      <Link href={href} target="blank">{text}</Link>
       <anim.svg
         width="22"
         height="22"

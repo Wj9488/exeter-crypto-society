@@ -5,6 +5,7 @@
 @tailwind utilities;
 
 @media (prefers-color-scheme: dark) {
+  /* Running class based dark mode: tailwind.config.js */
 }
 body {
   background-color: #fafafa;
@@ -14,7 +15,7 @@ body {
 
 /* Desktop hover animation */
 .hover__button {
-  transition: all 0.2s ease-in-out;
+  transition: all 250ms ease-in-out;
 }
 .hover__button:hover {
   scale: 1.025;

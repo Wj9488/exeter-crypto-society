@@ -95,7 +95,7 @@ export default function Home() {
             What's included in the membership?
           </h3>
           <div className="lg:grid grid-cols-3 grid-rows-1 place-items-end mt-10 lg:mt-20">
-            <div className="border border-black dark:border-neutral-200 min-h-[20vh] lg:h-[min-content] p-5 border__radius_top_left lg:mb-0 mb-2">
+            <div className=" min-h-[20vh] lg:h-[min-content] p-5 border__radius_top_left lg:mb-0 mb-2">
               <div className="flex items-center justify-between">
                 <p className="text-3xl mb-2 font-[500]">Weekly Socials</p>
                 <svg
@@ -116,7 +116,7 @@ export default function Home() {
                 community.
               </p>
             </div>
-            <div className="border border-black dark:border-neutral-200 lg:ml-2.5 xl:ml-5 min-h-[20vh] lg:h-[min-content]  p-5 border__radius_top_left lg:mb-0 mb-2">
+            <div className=" lg:ml-2.5 xl:ml-5 min-h-[20vh] lg:h-[min-content]  p-5 border__radius_top_left lg:mb-0 mb-2">
               <div className="flex items-center justify-between">
                 <p className="text-3xl mb-2 font-[500]">Trade Nights</p>
                 <svg
@@ -144,7 +144,7 @@ export default function Home() {
                 updated on market trends.
               </p>
             </div>
-            <div className="border border-black dark:border-neutral-200 lg:ml-2.5 xl:ml-5 min-h-[20vh] lg:h-[min-content]  p-5 border__radius_top_left lg:mb-0 mb-2">
+            <div className="lg:ml-2.5 xl:ml-5 min-h-[20vh] lg:h-[min-content]  p-5 border__radius_top_left lg:mb-0 mb-2">
               <div className="flex items-center justify-between">
                 <p className="text-3xl mb-2 font-[500]">Crypto Bootcamp</p>
                 <svg

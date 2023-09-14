@@ -59,8 +59,7 @@ const Committee = () => {
           </div>
           <div className="flex items-start justify-between pt-4 dark:text-neutral-200 pb-10  lg:gap-0 gap-10">
             <p className="text-lg lg:text-xl lg:w-4/12">
-              Will is in his 3rd year of business management and has been trading different assets for over 4 years. He specialises
-              in NFT trading on Solana and ETH. 
+              This is where Will's short description about himself should go. 
             </p>
             <ul className="text-sm ">
               <li className="hover:opacity-[75%] flex gap-2">
@@ -68,11 +67,11 @@ const Committee = () => {
                   <a target="_blank">LinkedIn</a>
                 </Link>
               </li>
-              <li className="hover:opacity-[75%] flex gap-2">
+              {/* <li className="hover:opacity-[75%] flex gap-2">
                 <Link legacyBehavior href="https://willjonesdev.co.uk/">
                   <a target="_blank">Website</a>
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
 
