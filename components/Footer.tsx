@@ -116,9 +116,9 @@ const Footer = () => {
             <li className="hover__link">
               <Link href="/committee">Committee</Link>
             </li>
-            <li className="hover__link">
+            {/* <li className="hover__link">
               <Link href="/bootcamp">Bootcamp</Link>
-            </li>
+            </li> */}
             <li className="hover__link">
               <Link legacyBehavior href="https://my.exeterguild.com/groups/H6VXP/blockchain-and-crypto-society/memberships">
                 <a target="_blank">Membership</a>
@@ -127,27 +127,27 @@ const Footer = () => {
           </ul>
           <ul className="text-sm">
             <li className="hover:opacity-[75%] flex gap-2">
-              <Link legacyBehavior href="/#events">
+              <Link legacyBehavior href="/?inactive_link">
                 <a target="_blank">Discord</a>
               </Link>
             </li>
             <li className="hover:opacity-[75%] flex gap-2">
-              <Link legacyBehavior href="/about">
+              <Link legacyBehavior href="/?inactive_link">
                 <a target="_blank">Instagram</a>
               </Link>
             </li>
             <li className="hover:opacity-[75%] flex gap-2">
-              <Link legacyBehavior href="/committee">
+              <Link legacyBehavior href="/?inactive_link">
                 <a target="_blank">Fixr</a>
               </Link>
             </li>
             <li className="hover:opacity-[75%] flex gap-2">
-              <Link legacyBehavior href="/">
+              <Link legacyBehavior href="/?inactive_link">
                 <a target="_blank">Guild Page</a>
               </Link>
             </li>
             <li className="hover:opacity-[75%] flex gap-2">
-              <Link legacyBehavior href="/">
+              <Link legacyBehavior href="?inactive_link">
                 <a target="_blank">LinkedIn</a>
               </Link>
             </li>
