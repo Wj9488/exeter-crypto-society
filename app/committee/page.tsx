@@ -67,11 +67,11 @@ const Committee = () => {
                   <a target="_blank">LinkedIn</a>
                 </Link>
               </li>
-              {/* <li className="hover:opacity-[75%] flex gap-2">
+              <li className="hover:opacity-[75%] flex gap-2">
                 <Link legacyBehavior href="https://willjonesdev.co.uk/">
                   <a target="_blank">Website</a>
                 </Link>
-              </li> */}
+              </li>
             </ul>
           </div>
 

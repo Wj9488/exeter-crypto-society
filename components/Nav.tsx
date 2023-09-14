@@ -309,7 +309,7 @@ const Nav = () => {
               >
                 <Link href="/about">About &#8594;</Link>
               </anim.li>
-              <anim.li
+              {/* <anim.li
                 initial={{ y: 20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.4 }}
@@ -317,11 +317,11 @@ const Nav = () => {
                 className="mt-5 mb-5 text-4xl"
               >
                 <Link href="/bootcamp">Crypto Bootcamp &#8594;</Link>
-              </anim.li>
+              </anim.li> */}
               <anim.li
                 initial={{ y: 20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
-                transition={{ delay: 0.5 }}
+                transition={{ delay: 0.4 }}
                 onClick={handleMenuClick}
                 className="mt-5 mb-5 text-4xl"
               >
