@@ -24,11 +24,7 @@ const GenericHeader = ({
 }: HeaderProps) => {
 
   const bannerAnimation = {
-    initial: {
-      rotate: "8deg",
-    },
     animate: {
-      rotate: "0deg",
       transition: {
         delayChildren: 0.4,
         staggerChildren: 0.1,
@@ -100,15 +96,15 @@ const GenericHeader = ({
     animate="animate"
     initial="initial"
     >
-      <div className="relative overflow-hidden pb-2">
-      <anim.h1 className="text-5xl lg:text-7xl xl:text-8xl 2xl:text-[6.25rem] font-[500] relative block"
+      <div className="pb-2">
+      <anim.h1 className="text-5xl lg:text-7xl xl:text-8xl 2xl:text-[6.25rem] font-[500]"
       variants={mainHeaderAnimation}
       animate="animate"
       initial="initial"
       >
       { headingOne }
       </anim.h1>
-      {/* <h1 className="text-5xl lg:text-7xl xl:text-8xl 2xl:text-[6.25rem] font-[500]">{headingOne}</h1> */}
+      {/* FOR A OVERFLOW EFFECT HAVE relative block specified on the h1 and relative overflow-hidden on the parent div <h1 className="text-5xl lg:text-7xl xl:text-8xl 2xl:text-[6.25rem] font-[500]">{headingOne}</h1> */}
       </div>
       <anim.div className="lg:ml-[0%]"
       variants= {SubheaderAnimation}

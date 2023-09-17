@@ -37,15 +37,12 @@ export default function Home() {
             opportunities in crypto, NFTs and wider markets.
             <br />
             <br />
-            We run frequent{" "}
-            <Link href="/#events" className="underline">
-              trade nights and socials
-            </Link>{" "}
+            We run frequent trade nights and socials
             as well as a free 8 week bootcamp teaching you all the basics about
             trading crypto using a variety of strategies.
           </p>
         </section>
-        <section id="events" className="">
+        <section className="">
           <Marquee listStyle="list-style-square" arrayData={marqueeOneData} />
         </section>
         <section className="lg:pt-10 lg:pb-20 flex items-center justify-center overflow-hidden">
@@ -206,7 +203,7 @@ export default function Home() {
             </p>
           </div> */}
         </section>
-        <section className="lg:pt-20 lg:pb-20 flex items-center justify-center overflow-hidden">
+        <section className="lg:pt-20 lg:pb-20 flex items-center justify-center overflow-hidden" id="events">
           <svg
             width="1381"
             height="82"

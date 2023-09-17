@@ -28,6 +28,13 @@ const Nav = () => {
     }
   }, [darkMode]);
 
+  const scrollToTop = () => {
+    console.log(window.scrollX)
+    window.scrollTo({
+      top: 0,
+    })
+  }
+
   const menuVariants = {
     open: {
       y: -0,
@@ -149,14 +156,14 @@ const Nav = () => {
         </div>
         <ul className="flex items-center justify-around lg:gap-5 gap-2 dark:text-neutral-200">
           <li className="desktop__view_only">
-            <Link className="" href="#events">
+            <Link className="" href={"/events"}>
               <span className="hover__link">
                 Events <sup>(x3)</sup>
               </span>
             </Link>
           </li>
           <li className="desktop__view_only">
-            <Link className="" href="/about">
+            <Link className="" href={"/about"} onClick={scrollToTop}>
               <span className="hover__link">About</span>
             </Link>
           </li>
@@ -166,20 +173,20 @@ const Nav = () => {
             </Link>
           </li> */}
           <li className="desktop__view_only">
-            <Link className="" href="/committee">
+            <Link className="" href={"/committee"} onClick={scrollToTop}>
               <span className="hover__link">Committee</span>
             </Link>
           </li>
           <button className="px-3 py-1 rounded-lg text-[#fafafa] bg-[#1F6752] hover__button">
             <Link
-              href="https://my.exeterguild.com/groups/H6VXP/blockchain-and-crypto-society/memberships"
+              href="https://my.exeterguild.com/groups/33WXC/self-development-society/memberships"
               legacyBehavior
             >
               <a target="_blank">Join us</a>
             </Link>
           </button>
           <p
-            className="dark:text-neutral-200 hover:cursor-pointer min-w-[1.5rem] bg-neutral-200 dark:bg-neutral-800 rounded-xl p-2 hover__button"
+            className="dark:text-neutral-200 hover:cursor-pointer min-w-[1.5rem] bg-neutral-100 dark:bg-neutral-800 rounded-lg p-2 hover__button"
             onClick={handleDarkClick}
           >
             <span className="sr-only sr-only-focusable">
@@ -222,7 +229,7 @@ const Nav = () => {
               Click to toggle navigation menu
             </span>
             {menuOpen ? (
-              <div className="bg-neutral-200 dark:bg-neutral-800 rounded-xl p-[0.5rem] text-xs">
+              <div className="bg-neutral-100 dark:bg-neutral-800 rounded-lg p-[0.5rem] text-xs">
                 {/* <svg
                   width="17"
                   height="17"
@@ -252,7 +259,7 @@ const Nav = () => {
                 Close
               </div>
             ) : (
-              <div className="bg-neutral-200 dark:bg-neutral-800 rounded-xl p-[0.5rem] text-xs">
+              <div className="bg-neutral-100 dark:bg-neutral-800 rounded-lg p-[0.5rem] text-xs">
                 {/* <svg
                   width="21"
                   height="12"

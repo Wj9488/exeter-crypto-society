@@ -117,19 +117,19 @@ const Footer = () => {
         <div className="flex gap-10">
           <ul className="text-2xl">
             <li className="hover__link">
-              <Link href="/#events">Events</Link>
+              <Link href={"/events"}>Events</Link>
             </li>
             <li className="hover__link">
-              <Link href="/about">About</Link>
+              <Link href={"/about"}>About</Link>
             </li>
             <li className="hover__link">
-              <Link href="/committee">Committee</Link>
+              <Link href={"/committee"}>Committee</Link>
             </li>
             {/* <li className="hover__link">
               <Link href="/bootcamp">Bootcamp</Link>
             </li> */}
             <li className="hover__link">
-              <Link legacyBehavior href="https://my.exeterguild.com/groups/H6VXP/blockchain-and-crypto-society/memberships">
+              <Link legacyBehavior href="https://my.exeterguild.com/groups/33WXC/self-development-society/memberships">
                 <a target="_blank">Membership</a>
               </Link>
             </li>

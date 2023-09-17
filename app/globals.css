@@ -10,6 +10,7 @@
 body {
   background-color: #fafafa;
   font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
   /* color: rgb(88, 78, 66); */
 }
 
