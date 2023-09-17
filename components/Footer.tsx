@@ -2,6 +2,8 @@
 
 import Link from "next/link";
 import { motion as anim, useAnimation } from "framer-motion";
+import Image from "next/image"
+import SelfDevIcon from "../public/selfDev__icon.png"
 
 const Footer = () => {
   const controls = useAnimation();
@@ -40,7 +42,14 @@ const Footer = () => {
       </Link>
       <section className="border__top pt-10 pb-10 lg:flex justify-between">
         <div className="flex items-start gap-2 lg:mb-0 mb-10">
-          <svg
+        <Image
+                  src={SelfDevIcon}
+                  alt="Society Logo"
+                  width={55}
+                  height={55}
+                  className="rounded-full"
+                />
+          {/* <svg
             width="29"
             height="40"
             viewBox="0 0 29 40"
@@ -103,7 +112,7 @@ const Footer = () => {
               className="stroke-black dark:stroke-neutral-200"
             />
           </svg>
-          <p className="text-xl font-semibold">Exeter Crypto</p>
+          <p className="text-xl font-semibold">Exeter Crypto</p> */}
         </div>
         <div className="flex gap-10">
           <ul className="text-2xl">
@@ -156,7 +165,7 @@ const Footer = () => {
       </section>
       <div className="lg:pb-4 pb-8 pt-4 lg:flex gap-2 lg:text-base text-xs">
         <p className="lg:mb-0 mb-2">
-          Copyright © Exeter Blockchain and Crypto Society
+          Copyright © Exeter Self Development Society
         </p>
         <div className="lg:block hidden">|</div>
         <Link href="https://willjonesdev.co.uk/" legacyBehavior>

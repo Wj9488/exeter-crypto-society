@@ -3,6 +3,8 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { motion as anim } from "framer-motion";
+import Image from "next/image";
+import SelfDevIcon from "../public/selfDev__icon.png";
 
 const Nav = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -56,16 +58,16 @@ const Nav = () => {
   };
 
   return (
-    <nav className="sticky top-0 z-10 bg-[#fafafa] dark:bg-[#1b1b1b] transition-colors duration-250">
+    <nav className="sticky py-1 top-0 z-10 bg-[#f1fffa] dark:bg-[#08170e] transition-colors duration-250">
       <anim.div
         className="flex items-center justify-between pl-[2.5%] pr-[2.5%] min-h-[6vh]"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ ease: "easeOut", duration: 0.5}}
+        transition={{ ease: "easeOut", duration: 0.5 }}
       >
         <div className="flex items-center" onClick={handleMenuClick}>
           <div className="flex items-center gap-2">
-            <svg
+            {/* <svg
               width="18"
               height="24"
               viewBox="0 0 18 24"
@@ -126,17 +128,23 @@ const Nav = () => {
                 y2="12"
                 className="stroke-black dark:stroke-neutral-200"
               />
-            </svg>
-            <Link
-              href="/"
-              role="Logo"
-              className="text-xl font-semibold dark:text-neutral-200"
-              onClick={() => {
-                window.scrollTo({ top: 0, behavior: "smooth" });
-              }}
-            >
-              Exeter Crypto
-            </Link>
+            </svg> */}
+              <Link
+                href="/"
+                role="Logo"
+                className="text-xl font-semibold dark:text-neutral-200"
+                onClick={() => {
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+              >
+                <Image
+                  src={SelfDevIcon}
+                  alt="Society Logo"
+                  width={55}
+                  height={55}
+                  className="rounded-full lg:w-[55px] lg:h-[55px] w-[45px] h-[45px]"
+                />
+              </Link>
           </div>
         </div>
         <ul className="flex items-center justify-around lg:gap-5 gap-2 dark:text-neutral-200">
@@ -162,7 +170,7 @@ const Nav = () => {
               <span className="hover__link">Committee</span>
             </Link>
           </li>
-          <button className="px-3 py-1 bg-neutral-900 rounded-lg text-white dark:text-black dark:bg-neutral-200 hover__button">
+          <button className="px-3 py-1 rounded-lg text-[#fafafa] bg-[#1F6752] hover__button">
             <Link
               href="https://my.exeterguild.com/groups/H6VXP/blockchain-and-crypto-society/memberships"
               legacyBehavior
@@ -241,7 +249,7 @@ const Nav = () => {
                     className="fill-black dark:fill-neutral-200"
                   />
                 </svg> */}
-                CLOSE
+                Close
               </div>
             ) : (
               <div className="bg-neutral-200 dark:bg-neutral-800 rounded-xl p-[0.5rem] text-xs">
@@ -273,14 +281,14 @@ const Nav = () => {
                     className="fill-black dark:fill-neutral-200"
                   />
                 </svg> */}
-                MENU
+                Menu
               </div>
             )}
           </div>
         </ul>
       </anim.div>
       <anim.div
-        className="text-neutral-100 dark:text-black flex ml-[2.5%] mr-[2.5%] flex-col items-start pl-[5%] justify-center absolute top-[7.5vh] xsm:top-[7.5vh] dark:bg-neutral-300 bg-neutral-900 w-[95%]"
+        className="text-neutral-100 flex ml-[2.5%] mr-[2.5%] flex-col items-start pl-[5%] justify-center absolute top-[8.5vh] xsm:top-[8.5vh] bg-[#1F6752] w-[95%]"
         role="Mobile Navigation Menu"
         variants={menuVariants}
         initial="closed"

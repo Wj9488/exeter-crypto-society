@@ -6,6 +6,9 @@ import PriceCarousel from "../components/PriceCarousel";
 export const metadata = {
   title: 'Exeter Crypto Society',
   description: 'Exeter Crypto Society website',
+  icons: {
+      icon: '/icon.png',
+  },
 }
 
 export default function RootLayout({
@@ -15,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className='bg-[#fafafa] dark:bg-[#1b1b1b] overflow-x-hidden transition-colors duration-250' id='exeterCryptoSociety__appWrap_v1'>
+      <body className='bg-[#f1fffa] dark:bg-[#08170e] overflow-x-hidden transition-colors duration-350' id='exeterCryptoSociety__appWrap_v1'>
         <Nav/>
         <PriceCarousel />
         {children}

@@ -47,11 +47,11 @@ const Faq = () => {
       {faqData.map((item, qIndex) => (
         <div className="mt-4 xl:mt-3" key={qIndex}>
           <div
-            className="flex items-center justify-between hover:cursor-pointer bg-neutral-200 dark:bg-neutral-700 hover:bg-neutral-300 dark:hover:bg-neutral-600 rounded-xl py-3 px-4"
+            className="flex items-center justify-between hover:cursor-pointer bg-[#1F6752] text-[#fafafa] rounded-xl py-3 px-4"
             onClick={() => toggleFaq(qIndex)}
           >
-            <p className="font-medium dark:text-neutral-200">{item.question}</p>
-            <p className="font-bold text-xl dark:text-neutral-200">
+            <p className="font-base dark:text-neutral-200">{item.question}</p>
+            <p className="font-base text-xl dark:text-neutral-200">
               {selected === qIndex ? "-" : "+"}
             </p>
           </div>
