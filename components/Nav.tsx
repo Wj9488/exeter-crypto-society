@@ -311,7 +311,7 @@ const Nav = () => {
                 onClick={handleMenuClick}
                 className="mt-5 text-4xl"
               >
-                <Link href="/#events">
+                <Link href="/events">
                   Events <sup>(x3)</sup> &#8594;
                 </Link>
               </anim.li>
